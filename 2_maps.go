@@ -1,3 +1,10 @@
+/*---------------------------------------------------------------------------------------------------------------*
+ * Ejercicio: Maps
+ * Implementa WordCount. Debería devolver un map de contadores para cada “palabra” en la cadena de caracteres s.
+ * La función wc.Text correrá una batería de tests sobre la función proporcionada y dará un veredicto.
+ *
+ * Quizás encuentres útil la función strings.Fields.
+ *---------------------------------------------------------------------------------------------------------------*/
 package main
 
 import (
