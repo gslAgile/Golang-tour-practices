@@ -9,13 +9,13 @@ package main
 
 import (
 	"fmt"
-	"strings"
-	//"tour/wc"
+	st "strings"
+	"golang.org/x/tour/wc"
 )
 
 func WordCount(s string) map[string]int {
 	/* Extraccion de palabras*/
-	palabras := strings.Fields(s)
+	palabras := st.Fields(s)
 	
 	//fmt.Println(palabras)
 	//fmt.Println(palabras[0])
@@ -24,18 +24,18 @@ func WordCount(s string) map[string]int {
 	var my_maps = make (map[string]int)
 	
 	for i:=0; i<len(palabras); i++ {
-		my_maps[palabras[i]]= i+1;
+		my_maps[palabras[i]] += 1
 	}
 	
 	return my_maps//map[string]int{"x": 1}
 }
 
 func main() {
-	//wc.Test(WordCount)
+	wc.Test(WordCount)
 	my_maps := make(map[string]int)
-	my_maps = WordCount("Hola mundo! Bienvenido al mundo Golang :B")
+	my_maps = WordCount("Hola mundo Go !!! Bienvenidos al mundo de Golang de Go :B")
 	
 	fmt.Println(my_maps)
 	
-	fmt.Println("La palabra Golang es la palabra nº:", my_maps["Golang"])
+	fmt.Println("\nLa frase 'Go' se repitio: ", my_maps["Go"], "veces.")
 }
