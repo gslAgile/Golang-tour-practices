@@ -37,5 +37,5 @@ func main() {
 	
 	fmt.Println(my_maps)
 	
-	fmt.Println("\nLa frase 'Go' se repitio: ", my_maps["Go"], "veces.")
+	fmt.Println("\nLa palabra 'Go' se repitio: ", my_maps["Go"], "veces en la frase.")
 }
