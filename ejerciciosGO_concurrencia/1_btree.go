@@ -51,11 +51,10 @@ func Same(t1, t2 *tree.Tree) bool {
             return false
         }
 
-        goutln(v1, "=", v2)
-
         if !ok1 {
             break
         }
+        goutln(v1, "=", v2)
     }
 
     return true
